@@ -1,0 +1,35 @@
+body,footer {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.table {
+    background-color: #fff;
+}
+
+.form-control-icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.form-control-task {
+    color: green; 
+}
+
+.form-control-bug {
+    color: red;
+}
+
+.form-control-feature {
+    color: blue; 
+}
+
+#taskList{
+    color:darkmagenta;
+}

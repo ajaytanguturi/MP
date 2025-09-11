@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workback Plan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: blueviolet;
+    }
+    .status-todo { color: white; background-color: #0d6efd; padding: 4px 8px; border-radius: 5px; }
+    .status-done { color: white; background-color: #198754; padding: 4px 8px; border-radius: 5px; }
+    .status-progress { color: white; background-color: #ffc107; padding: 4px 8px; border-radius: 5px; }
+    .type-icon {
+      display: inline-block;
+      width: 16px; height: 16px;
+      border-radius: 3px;
+      margin-right: 6px;
+    }
+    .type-bug { background-color: red; }
+    .type-task { background-color: green; }
+    .type-feature { background-color: blue; }
+  </style>
+</head>
+<body class="p-4">
+
+  <div class="container">
+    <h2 class="mb-4">Workback Plan</h2>
+
+    <!-- Form -->
+    <form id="taskForm" class="row g-3 mb-5">
+      <div class="col-md-2">
+        <label class="form-label">Type</label>
+        <select id="type" class="form-select" required>
+          <option value="task">Task</option>
+          <option value="bug">Bug</option>
+          <option value="feature">Feature</option>
+        </select>
+      </div>
+      <div class="col-md-1">
+        <label class="form-label">Key</label>
+        <input type="text" id="key" class="form-control" placeholder="MOBL-38" required>
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Summary</label>
+        <input type="text" id="summary" class="form-control" required>
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">Assignee</label>
+        <input type="text" id="assignee" class="form-control" required>
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">Priority</label>
+        <select id="priority" class="form-select" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">Status</label>
+        <select id="status" class="form-select" required>
+          <option value="todo">To Do</option>
+          <option value="inprogress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </div>
+    </form>
+
+    <!-- Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle text-center">
+        <thead class="table-light">
+          <tr>
+            <th>Type</th>
+            <th>Key</th>
+            <th>Summary</th>
+            <th>Assignee</th>
+            <th>Priority</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("taskForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const type = document.getElementById("type").value;
+      const key = document.getElementById("key").value;
+      const summary = document.getElementById("summary").value;
+      const assignee = document.getElementById("assignee").value;
+      const priority = document.getElementById("priority").value;
+      const status = document.getElementById("status").value;
+
+      let typeClass = type === "bug" ? "type-bug" : (type === "task" ? "type-task" : "type-feature");
+      let statusClass = status === "todo" ? "status-todo" : (status === "done" ? "status-done" : "status-progress");
+      let prioritySymbol = priority === "high" ? "🔺" : (priority === "low" ? "🔻" : "➖");
+
+      const row = `
+        <tr>
+          <td><span class="type-icon ${typeClass}"></span>${type}</td>
+          <td>${key}</td>
+          <td>${summary}</td>
+          <td>${assignee}</td>
+          <td>${prioritySymbol}</td>
+          <td><span class="${statusClass}">${status.replace(/^\w/, c => c.toUpperCase())}</span></td>
+        </tr>
+      `;
+
+      document.getElementById("taskTableBody").insertAdjacentHTML("beforeend", row);
+      document.getElementById("taskForm").reset();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Management System</title>
+    <link rel="icon" type="image/jpg" href="icon.jpg">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-left align-items-center">
+            <img src="task.jpg" type="image/jpg" alt="Task Logo" style="height:40px; width:auto; margin-right:15px;">
+            <h2 class="mb-0" style="text-align: center;">Task Management</h2>
+
+        </div>
+    </header>
+    <div class="container mt-5">
+
+        <div id="taskForm">
+            <form id="addTaskForm" autocomplete="off">
+                <div class="form-header mb-3">
+                    <h4>Add a New Task</h4>
+                    <p>Fill in the details below to add a task.</p>
+                </div>
+                <div class="form-group">
+                    <label for="taskType">Type</label>
+                    <select class="form-control" id="taskType" required>
+                        <option value="" disabled selected>Select Type</option>
+                        <option value="Task">Task</option>
+                        <option value="Bug">Bug</option>
+                        <option value="Feature">Feature</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taskSummary">Summary</label>
+                    <input type="text" class="form-control" id="taskSummary" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskStatus">Status</label>
+                    <select class="form-control" id="taskStatus" required>
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="TODO">TODO</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="DONE">Done</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taskAssignee">Assignee</label>
+                    <select class="form-control" id="taskAssignee" required>
+
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+                <button type="button" id="cancelForm" class="btn btn-secondary ml-2">Cancel</button>
+            </form>
+        </div>
+        <div id="taskTable" class="mt-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class=" mb-0">Task List</h2>
+                <div id="filterBox" class="d-flex flex-wrap">
+                    <input type="text" id="filterKey" class="form-control mr-2 mb-2" placeholder="Filter by Key"
+                        style="width: 120px;">
+                    <input type="text" id="filterSummary" class="form-control mr-2 mb-2" placeholder="Filter by Summary"
+                        style="width: 150px;">
+                    <select id="filterType" class="form-control mr-2 mb-2" style="width: 110px;">
+                        <option value="">All Types</option>
+                        <option value="Task">Task</option>
+                        <option value="Bug">Bug</option>
+                        <option value="Feature">Feature</option>
+                    </select>
+                    <select id="filterAssignee" class="form-control mr-2 mb-2" style="width: 130px;">
+                        <option value="">All assignees</option>
+                    </select>
+                    <select id="filterStatus" class="form-control mr-2 mb-2" style="width: 120px;">
+                        <option value="">All Statuses</option>
+                        <option value="TODO">TODO</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Done">Done</option>
+                    </select>
+                    <button id="clearFilters" class="btn btn-outline-secondary mb-2">Clear Filters</button>
+                </div>
+            </div>
+            <table class="table table-borderend">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Key</th>
+                        <th>Summary</th>
+                        <th>Assignee</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <!-- Tasks will be appended here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <strong>Deloitte USI</strong><br>
+            30 Rockefeller Plaza, New York, NY 10112, United States<br>
+            Phone: +1 212-492-4000<br>
+            Email: contactus@deloitte.com<br>
+            <span class="small">© 2025 Deloitte. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script/src.js"></script>
+</body>
+
+</html>
