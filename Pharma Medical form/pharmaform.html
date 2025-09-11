@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma form</title>
+	<link rel="icon" type="image/png" href="icon.png">
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	<form>
+		<header><h1 style="text-align:center; background: gray;padding: 10px;">Pharma Medical Form</h1></header>
+
+	 <h3> Personal Details </h3> 
+
+	<fieldset id="personal">
+		<label> Name : <input type="text" name="Your name" placeholder="your name" required></label><br>
+		
+		<br><label> Email id : <input type="email" name="Your Email id " placeholder="your mail ID" required></label><br>
+
+		<br><label> Date of Birth : <input type="date" name="Your DOB" required></label><br>
+		
+		<br><label> Mobile Num : <input type="tel" name= "Your mobile num"  placeholder="your mobile number" pattern="[0-9]{10}" required><br>
+		
+		<br><label>Address : <input type="text" name="address" placeholder="your address" required</label><br>
+
+		<br><label>Patient ID : <input type="text" name="patient_id" placeholder="your Patient id" required></label><br>
+
+		<br><label>Referring Doctor name : <input type="text" name="doctor name" placeholder="If refered by a doctor"></label><br>
+	
+		<br><label>Doctor's Mobile num : <input type="tel" name="doctor num" placeholder="Doctor's number if avaliable"></label><br>
+	</fieldset>
+	
+	<h3> Gender </h3> 
+		<fieldset id="gender">
+
+			<label><input type="radio" name="gender" value="Male">Male</label><br>
+			
+			<label><input type="radio" name="gender" value="Female">Female</label><br>
+		
+		</fieldset>
+		
+		
+	<h3>Blood Group</h3>
+
+		<fieldset id="blood_group">
+			<label><input type="radio" name="blood_group" value="A+">A+</label><br>
+			
+			<label><input type="radio" name="blood_group" value="B+">B+</label><br>
+		
+			<label><input type="radio" name="blood_group" value="O+">O+</label><br>
+
+			<label><input type="radio" name="blood_group" value="AB+">AB+</label><br>
+
+			<label><input type="radio" name="blood_group" value="A-">A-</label><br>
+		
+			<label><input type="radio" name="blood_group" value="B-">B-</label><br>
+
+			<label><input type="radio" name="blood_group" value="O-">O-</label><br>
+
+			<label><input type="radio" name="blood_group" value="AB-">AB-</label><br>
+		</fieldset>
+		
+	<h3>Tests Information</h3>
+
+	<fieldset id="tests">
+		<label><input type="checkbox" name="test" value="blood test">Blood Test</label><br>
+
+		<label><input type="checkbox" name="test" value="bloodpressure test">BP Test</label><br>
+
+		<label><input type="checkbox" name="test" value="Urine test">Urine Test</label><br>
+
+		<label><input type="checkbox" name="test" value="Sugar test">Sugar Test</label><br>
+		
+		<label><input type="checkbox" name="test" value="X-Ray test">X-Ray</label><br>
+		
+		<label><input type="checkbox" name="test" value="Ultra sound test">Ultrasound Test</label><br>
+
+		<label><input type="checkbox" name="test" value="ct scan">CT scan</label><br>
+
+		<label><input type="checkbox" name="test" value="mri test">MRI Test</label><br>
+	
+		<label><input type="checkbox" name="test" value="microbiological test">Throat Swab</label><br>
+		
+		<label><input type="checkbox" name="test" value="sputum culture">Sputum Culture</label><br>
+	
+		<label><input type="checkbox" name="test" value="pcr test">PCR Test</label><br>
+
+		<label><input type="checkbox" name="test" value="ecg test">ECG Test</label><br>
+			
+		<label><input type="checkbox" name="test" value="echo test">Echocardiogram</label><br>
+
+		<label><input type="checkbox" name="test" value="allergy test">Allergy Test</label><br>
+
+		<label><input type="checkbox" name="test" value="Vision test">Vision Test</label><br>
+
+		<label><input type="checkbox" name="test" value="hearing test">Hearing Test</label><br>
+	</fieldset>
+	
+	<h3>Reports Received</h3>
+
+	<fieldset id="reports">
+		<label><input type="radio" name="Reports" value="Yes" >Yes</label><br>
+
+		<label><input type="radio" name="Reports" value="NO" >No</label><br>
+	</fieldset>
+
+	<fieldset id="insurance">
+		<br><label>Medical Insurance company name : <input type="text" name="Insurance provider" placeholder="your Insurance provider name" ></label><br>
+ 	
+		<br><label>Insurance ID : <input type="text" name="Insurance id" placeholder="your Insurance ID " ></label><br>
+
+	</fieldset>
+
+	<br><input type="submit" value="submit">
+
+	</form>
+
+</body>
+</html>

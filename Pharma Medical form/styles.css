@@ -1,0 +1,29 @@
+h3{
+    text-align: center;
+    font-size: x-large;
+    background-color: aqua ;
+  
+}
+
+#personal, #gender, #blood_group, #tests, #reports{
+	text align :center;
+	padding :30px;
+}
+#personal  br label input{
+	text align: stretch;
+	margin: 5px;
+}
+
+#insurance{
+text align:center;
+margin: 5px 2px;
+padding 30px;
+}
+
+br label{
+    text-align: left;
+    padding: 30px;
+}
+#tests{
+
+
