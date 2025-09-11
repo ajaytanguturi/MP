@@ -1,0 +1,102 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<title>Employee Details</title>
+	<link rel="icon" type="image/png" href="Deloittelogo.png">
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	<header><h1 style="text-align:center;padding: 10px;">Employee Details Form</h1></header>
+	 
+	<img src="Deloittename.png" alt="Deloitte Brand" width="200" height="100" >
+
+	<form>
+		<h3> Personal Details </h3> 
+
+	<fieldset id="personal">
+		<label> Name : <input type="text" name="Your name" placeholder="your name" required></label><br>
+		
+		<br><label> Email id : <input type="email" name="Your Email id " placeholder="your mail ID" required></label><br>
+
+		<br><label> Date of Birth : <input type="date" name="Your DOB" required></label><br>
+		
+		<br><label> Mobile Num : <input type="tel" name= "Your mobile num"  placeholder="your mobile number" pattern="[0-9]{10}" required><br>
+		
+		<br><label>Address : <input type="text" name="address" placeholder="your address" required</label><br>
+
+		<br><label> Personnel Number : <input type="tel" name= "personnel id"  placeholder="your personnel ID" pattern="[0-9]{8}" required><br>
+	
+		<br><label> Designation: <input type="text" name="Your designation" placeholder="your Designation" required></label><br>
+		
+		<br><label> Business Area : <input type="text" name="Your business" placeholder="your Business Area" required></label><br>
+		
+		<br><label> Business Line : <input type="text" name=" Business line" placeholder="your Business Line" required></label><br>
+
+	</fieldset>
+
+	<h3> Education Details </h3> 
+	
+    <fieldset>
+	
+      	<label>UG Completed?</label>
+      		<input type="radio" name="ug" id="ug_yes" value="yes"> <label for="ug_yes">Yes</label>
+
+      		<input type="radio" name="ug" id="ug_no" value="no"> <label for="ug_no">No</label>
+
+      <div class="details-section" id="ug_details">
+
+        	<br><div class="row"><label>College Name:</label> <input type="text" name="ug_college"></div><br>
+
+        	<br><div class="row"><label>University Name:</label> <input type="text" name="ug_university"></div><br>
+
+        	<br><div class="row"><label>Reg No:</label> <input type="text" name="ug_regno"></div><br>
+
+        	<br><div class="row"><label>CGPA:</label> <input type="text" name="ug_cgpa"></div><br>
+      </div>
+    </fieldset>
+
+
+	<fieldset id="Inter">
+     		 <label>Intermediate Completed?</label>
+
+      <input type="radio" name="inter" id="inter_yes" value="yes"> <label for="inter_yes">Yes</label>
+
+      <input type="radio" name="inter" id="inter_no" value="no"> <label for="inter_no">No</label>
+
+      <div class="details-section" id="inter_details">
+
+        <div class="row"><label>College Name:</label> <input type="text" name="inter_college"></div>
+
+        <div class="row"><label>Board Name:</label> <input type="text" name="inter_board"></div>
+
+        <div class="row"><label>Reg No:</label> <input type="text" name="inter_regno"></div>
+
+        <div class="row"><label>Percentage:</label> <input type="text" name="inter_percentage"></div>
+
+      </div>
+    </fieldset>
+
+	<fieldset>
+      		<label>Matriculation Completed?</label>
+
+      	<input type="radio" name="matric" id="matric_yes" value="yes"> <label for="matric_yes">Yes</label>
+
+     		 <input type="radio" name="matric" id="matric_no" value="no"> <label for="matric_no">No</label>
+
+     	 <div class="details-section" id="matric_details">
+
+      		  <div class="row"><label>School Name:</label> <input type="text" name="matric_school"></div>
+
+       		 <div class="row"><label>Board Name:</label> <input type="text" name="matric_board"></div>
+
+       		 <div class="row"><label>Reg No:</label> <input type="text" name="matric_regno"></div>
+
+       		 <div class="row"><label>Percentage:</label> <input type="text" name="matric_percentage"></div>
+      </div>
+    </fieldset>
+
+</form>
+<script src="script.js"></script>
+</body>
+</html>

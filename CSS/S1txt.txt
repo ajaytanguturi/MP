@@ -1,0 +1,268 @@
+Stage Gate Assessment – Technology Group (Customer, Frontend, JS, jQuery, SQL)   SET 1
+Multiple Choice Questions (50 Questions)
+1.	Which HTML tag is used to create a hyperlink?
+o	A. <link>
+o	B. <a>
+o	C. <href>
+o	D. <url>
+2.	What does CSS stand for?
+o	A. Cascading Style Sheets
+o	B. Computer Style Sheets
+o	C. Creative Style System
+o	D. Colorful Style Syntax
+3.	Which CSS property is used to change the text color of an element?
+o	A. font-color
+o	B. color
+o	C. text-color
+o	D. background-color
+4.	Which HTML attribute is used to define inline styles?
+o	A. class
+o	B. styles
+o	C. style
+o	D. font
+5.	In JavaScript, which keyword is used to declare a variable with block scope?
+o	A. var
+o	B. let
+o	C. var and let
+o	D. const
+6.	What will be the output of the following JavaScript code?
+console.log(typeof NaN);
+o	A. number
+o	B. NaN
+o	C. undefined
+o	D. object
+7.	Which jQuery method ensures code runs after the DOM is fully loaded?
+o	A. $(document).ready()
+o	B. $(window).load()
+o	C. $(document).load()
+o	D. $(window).ready()
+
+8.	In SQL, which keyword is used to sort the result set in ascending or descending order?
+o	A. FILTER
+o	B. ORDER BY
+o	C. SORT
+o	D. GROUP BY
+9.	Which SQL statement is used to extract data from a database?
+o	A. GET
+o	B. SELECT
+o	C. EXTRACT
+o	D. READ
+10.	What is the purpose of the <meta> tag in HTML?
+o	A. To define metadata about an HTML document
+o	B. To create a hyperlink
+o	C. To add JavaScript code
+o	D. To apply CSS to elements
+11.	Which CSS selector targets elements with a specific class name?
+o	A. #className
+o	B. .className
+o	C. className
+o	D. @className
+12.	Which HTML element is used for creating an unordered list?
+o	A. <ol>
+o	B. <ul>
+o	C. <list>
+o	D. <dl>
+13.	How do you write a comment in JavaScript?
+o	A. // This is a comment
+o	B. <!-- This is a comment -->
+o	C. ## This is a comment
+o	D. /* This is a comment */
+14.	Which CSS property is used to control the layout flow of elements (for example, block or inline)?
+o	A. display
+o	B. position
+o	C. float
+o	D. overflow
+15.	In JavaScript, what does the === operator do?
+o	A. Assigns a value
+o	B. Compares both value and type
+o	C. Compares value only
+o	D. Checks for inequality
+16.	Which jQuery selector matches all <p> elements on a page?
+o	A. $("p")
+o	B. $("#p")
+o	C. $(".p")
+o	D. $(p)
+
+17.	What is the purpose of the DOCTYPE declaration in an HTML document?
+o	A. It specifies the HTML version and rendering mode
+o	B. It is used to link an external stylesheet
+o	C. It declares an external JavaScript file
+o	D. It provides metadata about the HTML document
+18.	Which CSS property is used to add space between the content of an element and its border?
+o	A. margin
+o	B. padding
+o	C. spacing
+o	D. border-spacing
+19.	What will be the result of the following JavaScript code?
+	console.log('Hello'.toUpperCase());
+•	A. HELLO
+•	B. Hello
+•	C. hello
+•	D. Error
+20.	Which jQuery method is used to hide selected elements?
+•	A. .hide()
+•	B. .show()
+•	C. .toggle()
+•	D. .invisible()
+21.	In SQL, which clause is used to filter records returned by a SELECT query?
+•	A. WHERE
+•	B. HAVING
+•	C. ORDER BY
+•	D. JOIN
+22.	Which HTML element is used to create a table?
+•	A. <table>
+•	B. <tab>
+•	C. <tableview>
+•	D. <tbody>
+
+
+
+23.	How do you select an element with id 'header' in CSS?
+•	A. #header
+•	B. .header
+•	C. header
+•	D. *#header
+24.	In JavaScript, how do you create a function named greet?
+•	A. function greet() { }
+•	B. greet() = function() { }
+•	C. function = greet() { }
+•	D. def greet() { }
+25.	Which jQuery function is used to attach a click event handler to an element?
+•	A. .click()
+•	B. .on('click', handler)
+•	C. .bindClick()
+•	D. .hover()
+26.	In SQL, what does the COUNT(*) function do?
+•	A. Returns the total number of rows
+•	B. Returns the number of distinct values
+•	C. Returns the number of columns
+•	D. Returns the number of non-null entries
+27.	Which attribute is used to associate a CSS file with an HTML document?
+•	A. href
+•	B. src
+•	C. rel
+•	D. id
+28.	What is the correct way to declare a JavaScript array?
+•	A. var arr = [1,2,3];
+•	B. var arr = Array{1,2,3};
+•	C. var arr = new array(1,2,3);
+•	D. var arr = new Array(1,2,3);
+29.	In jQuery, what does $(this) refer to inside an event handler?
+•	A. The current element that triggered the event
+•	B. The entire document
+•	C. The parent element
+•	D. The previous element in the DOM
+30.	In HTML forms, which attribute specifies where to send the form data when submitted?
+•	A. action
+•	B. method
+•	C. enctype
+•	D. type
+31.	Which CSS property is used to change the font of text?
+•	A. font-family
+•	B. font-style
+•	C. text-font
+•	D. font-color
+32.	What does the alert() function do in JavaScript?
+•	A. Prints a message to the console
+•	B. Displays an alert dialog box
+•	C. Stops the execution of the script
+•	D. Prompts the user for input
+33.	In jQuery, which method is used to get or set the HTML content of an element?
+•	A. .html()
+•	B. .text()
+•	C. .val()
+•	D. .content()
+34.	Which SQL clause is used to combine rows from two tables based on a related column?
+•	A. JOIN
+•	B. UNION
+•	C. MERGE
+•	D. GROUP BY
+35.	Which HTML tag is used to display an image?
+•	A. <img>
+•	B. <image>
+•	C. <figure>
+•	D. <src>
+
+
+36.	How do you apply inline CSS to make text bold?
+•	A. <span style="font-weight:bold;">Text</span>
+•	B. <b>Text</b>
+•	C. <strong>Text</strong>
+•	D. <font style="text:bold;">Text</font>
+37.	In JavaScript, which built-in method converts a JSON string to an object?
+•	A. JSON.parse()
+•	B. JSON.stringify()
+•	C. JSON.convert()
+•	D. string.parse()
+38.	Which SQL function returns the largest value of a column?
+•	A. MAX()
+•	B. MIN()
+•	C. UPPER()
+•	D. LARGEST()
+39.	Which HTML element defines the title of the document shown in browser tab?
+•	A. <head>
+•	B. <title>
+•	C. <tab>
+•	D. <header>
+40.	How do you make a comment in CSS?
+•	A. /* comment */
+•	B. // comment
+•	C. <!-- comment -->
+•	D. // * comment
+41.	In JavaScript, what keyword is used to declare a constant?
+•	A. const
+•	B. let
+•	C. var
+•	D. constant
+42.	Which jQuery method is used to show hidden elements?
+•	A. .show()
+•	B. .hide()
+•	C. .toggle()
+•	D. .visible()
+43.	In SQL, which clause is used to group rows that have the same values in specified columns?
+•	A. GROUP BY
+•	B. ORDER BY
+•	C. WHERE
+•	D. JOIN
+44.	Which HTML element is used to define an ordered list?
+•	A. <ol>
+•	B. <order>
+•	C. <list>
+•	D. <ul>
+45.	Which CSS property is used to change the background color of an element?
+•	A. background-color
+•	B. bgColor
+•	C. color
+•	D. bkg
+46.	What is the correct syntax to output 'Hello World' in JavaScript?
+•	A. echo("Hello World");
+•	B. console.log("Hello World");
+•	C. print("Hello World");
+•	D. alert("Hello World")
+47.	In jQuery, what does $('p.highlight') select?
+•	A. All <p> elements with class "highlight"
+•	B. Element with id "p" and class "highlight"
+•	C. All elements with tag 'highlight' inside <p>
+•	D. The <p> element with class "highlight"
+48.	In SQL, what is the purpose of the DISTINCT keyword?
+•	A. Returns only unique values (removes duplicates)
+•	B. Includes all duplicate rows
+•	C. Groups values
+•	D. Sorts values
+
+
+49.	In HTML, which attribute is used to set an inline JavaScript event handler (for example, on click)?
+•	A. onclick
+•	B. onClick
+•	C. js-event
+•	D. event
+50.	Which CSS property controls the space between lines of text?
+•	A. line-height
+•	B. spacing
+•	C. text-spacing
+•	D. line-spacing
+Coding Questions (4 questions)
+1.	Write a JavaScript function isPalindrome(str) that returns true if str reads the same forwards and backwards (ignoring case), and false otherwise.
+2.	Create an HTML page with a button labeled "Change Color". Write JavaScript so that clicking the button changes the page background to a random color.
+3.	Using jQuery, write code to toggle the visibility of an element with the id info whenever a button with the id toggleBtn is clicked.
+4.	Write a JavaScript function filterEvenNumbers(arr) that takes an array of integers arr and returns a new array containing only the even numbers from arr.

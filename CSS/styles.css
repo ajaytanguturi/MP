@@ -1,0 +1,22 @@
+#personal{
+	background-color: pink;
+}
+
+.details-section {
+      display: none;
+      margin: 10px 0 20px 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+    label {
+      margin-right: 10px;
+    }
+    .row {
+      margin-bottom: 8px;
+    }
+
+#Inter{
+margin:5px;
+padding: 5px;
+}
